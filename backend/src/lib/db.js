@@ -8,6 +8,7 @@ export const connectDB = async () => {
             socketTimeoutMS: 45000, 
         });
     console.log(`MongoDB Connected: ${connect.connection.host}`);
+    console.log('Hi');
 
     
         
