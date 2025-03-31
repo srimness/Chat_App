@@ -28,8 +28,7 @@ export const useAuthStore = create((set, get) =>({
         } catch (error) {
             console.log('Error in checkAuth', error)
             set({authUser:null})
-            toast.error("Authentication failed, please login again.");  // why this is getting called twice??  maybe it's because in development phase.. it'll be 
-            //called twice? something about the strict mode in index.css file or main.jsx file.. look into it tomorrow. yeah? gg good job so far...
+            toast.error("Authentication failed, please login again.");  
 
         }
         finally{
